@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
             height: '40px',
             borderRadius: '20%',
             backgroundColor: '#fff', 
-            border: '2px solid white'
+            border: '2px solid grey'
           }}
         >    
         <img 

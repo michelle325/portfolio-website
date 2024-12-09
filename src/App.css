@@ -27,8 +27,8 @@ footer {
   flex-shrink: 0;
   width: 100%;
   text-align: center;
-  background-image: linear-gradient(180deg,#ffc62900,rgb(39, 141, 126));
-  color: white;
+  background-image: linear-gradient(180deg,#ffc62900,rgb(255, 215, 96));
+  color: black;
   padding: 10px 0; 
 }
 
@@ -136,6 +136,7 @@ nav li::before{
   cursor: pointer;
   font-size: 15px;
   border: 1px dotted white;
+  color: black;
 }
 
 .button:hover{

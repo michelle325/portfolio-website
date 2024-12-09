@@ -5,7 +5,7 @@ const About: React.FC = () => {
   return (
     <main className="about-page">
       <h1>About Me</h1>
-      <p>Originally from Texas, Michelle currently resides in Washington, D.C. with her husband and their two pets, Tofu and Meiji. Michelle has experience working in a range of health care settings, including a private therapy practice, community vaccination center, and hospitals. Following her graduating from The University of Austin with a Bachelor's of Science in Psychology, Michelle is currently pursuing a Master's in Software Development. Michelle hopes to combine her medical background to imrpove health care with emerging technological solutions.</p>
+      <p>Originally from Texas, Michelle currently resides in Washington, D.C. with her husband and their two pets, Tofu and Meiji. Michelle has experience working in a range of health care settings, including a private therapy practice, community vaccination center, and hospitals. Following her graduating from The University of Austin with a Bachelor's of Science in Psychology, Michelle is currently pursuing a Master's in Software Development. Michelle hopes to combine her medical background to improve health care with emerging technological solutions.</p>
       <div className="pet-container">
         <div className='pet-item'>    
           <h2>Meiji the Cat</h2>
