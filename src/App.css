@@ -1,38 +1,344 @@
-.App {
-  text-align: center;
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
+  max-width: 100%;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.content {
+  max-width: 100%;
+  overflow-x: hidden;
+  flex: 1 0 auto;
+  background-color: white;
+  padding-bottom: 60px;
+}
+
+footer {
+  flex-shrink: 0;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(180deg,#ffc62900,rgb(39, 141, 126));
+  color: white;
+  padding: 10px 0; 
+}
+
+footer a img {
+  transition: transform 0.3s ease;
+}
+
+footer a:hover img {
+  transform: scale(1.1);
+}
+
+.page-header p{
+  width:100%;
+  background-color: rgb(255, 242, 205);
+  text-align: center;
+  margin-top: 0;
+  padding: 5px;
+  border: 1px solid grey;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:  white;
+  height:100%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-image: linear-gradient(to bottom right, rgb(24, 144, 150), rgb(255, 215, 96));
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 5px 50px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav .navbar-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+}
+
+.navbar-header h1{
+  margin-bottom: 5px;
+}
+
+.navbar-header .pronouns{
+  margin-top: 0px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  margin: 0 5px;
+}
+
+.navbar .button {
+  width: auto;
+  padding: 10px 15px;
+  margin: 5px;
+}
+
+nav h1{
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav p {
+  color:white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+nav li{
+  display:inline;
+  position:relative;
+  padding:0 10px;
+}
+
+nav li::before{
+  content: "⭐ ";
+}
+
+.button{
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+  border: none;
+  background-color: #ebe18fd1;
+  cursor: pointer;
+  font-size: 15px;
+  border: 1px dotted white;
+}
+
+.button:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  color: black;
+  background-color: #ebe08f;
+  font-weight: bolder;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(24, 144, 150);
+  border: 1px solid white;
+}
+
+main{
+  margin-left:50px;
+  margin-right:50px;
+  background-color: white;
+  border-radius: 25px;
+  border: 2px solid rgb(255, 255, 255);
+  padding-bottom: 60px;
+}
+
+h1{
+  background-color: #ffc629;
+  padding: 10px;
+  text-align: center;
+  border-radius: 25px;
+  color: white;
+}
+
+.home-page {
+  margin: 20px;
+}
+
+.profile-container {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-pic {
+  flex: 0 0 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 50px; 
+  transition: transform 0.3s ease; 
+}
+
+.profile-text{
+  flex:1;
+  display:flex;
+  flex-direction: column;
+}
+
+.profile-text h2 {
+  color: black;
+  font-size: 3em;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(24, 144, 150);
+}
+
+.profile-text p {
+  font-size: 20px;
+}
+
+.about-page{
+  text-align: center;
+}
+
+.about-page p{
+  padding: 20px;
+  padding-left: 30px;
+  border-radius: 10px;
+  border-style: dotted;
+}
+
+.item-title {
+  background-color:  rgb(255, 242, 205);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.experience-page ul{
+  padding: 20px;
+  padding-left: 30px;
+  border-radius: 10px;
+  border-style: dotted;
+}
+
+.experience-page h3{
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(24, 144, 150);
+}
+
+.hobby-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hobby-page p{
+  text-align: center;
+  padding: 20px;
+  padding-left: 30px;
+  border-radius: 10px;
+  border-style: dotted;
+}
+
+.hobby-page h2{
+  background-color:  rgb(255, 242, 205);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.crochet-image, .lion-dance-image, .pet-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%; 
+  margin-bottom: 20px; 
+}
+
+.crochet, .lion-dance{
+  max-height: 300px; 
+  max-width: 250px; 
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease; 
+}
+
+.pet{
+  max-height: 350px;
+  border-radius: 10px;
+}
+
+.pet-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px 20px;
+  transition: transform 0.3s ease;
+}
+
+.pet-item h2 {
+  position: relative;
+  z-index: 2; 
+}
+
+.pet-item .pet {
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.pet-item:hover, .crochet:hover, .lion-dance:hover, .profile-pic:hover {
+  transform: scale(1.05); 
+}
+
+.wavy-label {
+  color: black;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(24, 144, 150);
+  font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .profile-pic {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .profile-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  nav{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  nav li {
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
   }
 }
